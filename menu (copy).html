@@ -1,0 +1,1046 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- https://source.unsplash.com/1400x400/?pizza -->
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Trail3!</title>
+  <style>
+    .bummm{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .bummm2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 23px;
+
+    }
+    .select{
+      border: none;
+      width: 55px;
+      background-color: white;
+    }
+    
+    .select2{
+      border: none;
+      width: 57px;
+      height: 26px;
+      font-size: 70%;
+      margin-left: 2px;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .bb{
+      
+      width: 90px;
+      height: 30px;
+      opacity: 0;
+       background-color: rgb(58, 161, 17);
+       display: flex;
+       border-radius: 3px;
+      }
+    .bb2{
+      
+      width: 57px;
+      height: 30px;
+      opacity: 0;
+       background-color: rgb(58, 161, 17);
+       display: flex;
+       border-radius: 3px;
+      }
+    
+      .del{
+        background-color: rgb(255, 255, 255);
+        width: 27px;
+        height: 26px;
+        margin-left: 2px;
+        margin-top: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+      }
+      .nummm{
+        background-color: rgb(255, 255, 255);
+        width: 57px;
+        height: 26px;
+        margin-left: 2px;
+        margin-top: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+      }
+     
+      
+      #delll{
+        cursor: pointer;
+      }
+      #increaser{
+        outline: none;
+        border: none;
+      }
+      #plus{
+        width: 16px;
+        margin-bottom: 3px;
+      }
+    #therange{
+      width: 40px;
+      height: 17px ;
+      font-size: 60%;
+     
+    }
+    .bar {
+      height: 3px;
+      width: 100%;
+      background-color: rgb(8, 115, 255);
+      border-radius: 9px;
+  }
+  .togglebtn {
+    position: relative;
+    display: none;
+     background-color: rgb(231, 229, 229);
+     box-shadow: 0px 2px 10px 0.9px rgb(255, 255, 255);
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    margin-left: 17px;
+}
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  border-radius: 18px;
+  box-shadow: 2px 2px 15px 0.2px rgb(194, 193, 193);
+}
+#checkout{
+  text-shadow: 2px 2px 3px rgb(2, 50, 122)
+  
+}
+.checkbtn{
+  box-shadow: inset 2px 2px 6px 0.2px rgba(0, 0, 0, 0.603);
+  border-radius: 10px;
+
+}
+
+@media (max-width:400px){
+    .togglebtn{
+      display: flex;
+    }
+    .navbar-links {
+      display: none;
+      width: 100%;
+  }
+    .navbar-links {
+      display: none;
+      width: 100%;
+  }
+
+  .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
+  }
+
+ s
+
+  .navbar-links ul li a {
+      padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+      display: flex;
+  }
+}
+.nav-link{
+  font-weight: bold;
+  
+}
+    #scrollspyHeading1{
+     margin-top: 20px;
+     padding-top: 50px;
+    }
+    .c1,
+    .c2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+     align-items: auto;
+     padding-left: 50px;
+     padding-right: 50px;
+     padding-top: 30px;
+    }
+    .c1 img,.c2 img{
+      border-radius: 15px;
+      box-shadow: 2px 2px 5px 2px rgb(163, 163, 163);
+    }
+    
+    .c3 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 20px 80px;
+      padding: 40px;
+
+    }
+
+    .heading {
+      font-size: large;
+      font-weight: bold;
+    }
+
+    #itemprice {
+      
+      font-family: 'Roboto', sans-serif;
+    }
+    #demo2{
+      font-family: 'Roboto', sans-serif;
+      
+    }
+    
+
+    .description {
+      font-size: 80%;
+    }
+
+    .description2 {
+      font-size: 60%;
+    }
+
+    .price {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    input.check {
+      width: 30px;
+      height: 30px;
+    }
+
+    .bara {
+      width: 100%;
+      height: 1px;
+      background-color: rgb(172, 172, 172);
+      margin: 20px 0px;
+    }
+
+    .bara2 {
+      width: 100%;
+      height: 1px;
+      background-color: rgba(26, 143, 26, 0.651);
+      margin: 4px 0px;
+    }
+
+    .boxa {
+      margin: -35px 130px;
+      background-color: rgb(253, 253, 253);
+      box-shadow: 2px 2px 5px rgb(190, 190, 190);
+      width: 100px;
+      height: 30px;
+      border-radius: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .card8{
+      box-shadow: 2px 2px 15px 2px rgb(223, 223, 223) ;
+      
+      
+    }
+    .card{
+      box-shadow: inset 2px 2px 10px 1px rgb(196, 196, 196) ;
+      border-radius: 15px;
+      min-width: 230px;
+      margin-top: 20px;
+  
+    }
+    
+
+    #greenlogo {
+      width: 15px;
+      height: 15px;
+      margin: 10px;
+    }
+
+    #p1 {
+      margin-top: 13px;
+      margin-right: 10px;
+      color: green;
+      font-size: 80%;
+    }
+
+    #p2 {
+      margin-top: 13px;
+      margin-right: 10px;
+      color: red;
+      font-size: 70%;
+    }
+
+    .btn {
+      font-weight: bold;
+    }
+    .main{
+      display: flex;
+      flex-direction: column;
+    }
+    
+    #offcanvasRightLabel {
+      color: rgb(18, 98, 247);
+      font-weight: bolder;
+      font-size: 150%;
+      margin-top: 10px;
+      text-shadow: 2px 2px 2px rgba(122, 122, 122, 0.74);
+    }
+
+    footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .itemz,.totalofbill{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 10px;
+      margin-right: 10px;
+      
+    }
+    #proceed{
+      
+      background-color: rgb(18, 98, 247);
+      color: white;
+      border-radius: 4px;
+      outline: none;
+      border: none;
+      font-weight: bold;
+      box-shadow:  2px 2px 5px 1px rgb(172, 172, 172);
+    }
+    .probtn button:disabled{
+      opacity: 60%;
+      }
+    
+   
+  </style>
+</head>
+
+<body>
+ <div class="main">
+  <div class="navv">
+    
+    
+    <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+      
+      
+ 
+
+      <div class="togglebtn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+      <a class="navbar-brand" href="javascript:;">
+        <button class="btn btn-primary checkbtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight" id="checkout">Checkout</button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h3 id="offcanvasRightLabel">BILL</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="bara2"></div>
+            <div class="bara2"></div>
+            <div class="itemz">
+             
+                 <p id="itemprice"></p>
+               
+                <p id="itemname"></p>
+               
+              </div>
+              <div class="bara2"></div>
+            <div class="bara2"></div>
+              <div class="totalofbill">
+                <p id="total" style="font-weight: bold;">Total</p>
+                <p id="demo2"></p>
+              </div>
+            
+<div class="probtn">
+  <button id="proceed" class="pro" onclick="location.href = 'proceed.html';">Proceed</button></div>
+
+          </div>
+        </div>
+      </a>
+      <div class="navbar-links">
+      <ul class="nav nav-pills" id="ilis">
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading1">Pizza</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading2">Burger</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+            aria-expanded="false">Others</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#scrollspyHeading3">Pasta</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading4">Cold-Drinks</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#scrollspyHeading5">Beverages</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    </nav>
+  
+  </div>
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+
+    <h4 id="scrollspyHeading1">
+      <div class="line">
+        <div class="bara"></div>
+        <div class="boxa">
+          <img src="greenlogo.png" alt="" id="greenlogo">
+          <p id="p1">Pizza</p>
+        </div>
+      </div>
+    </h4>
+    <form action="" id="form">
+
+      <div class="c1">
+
+        <div class="card" style="width: 18rem;">
+          <img src="pizza1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">
+            <p class="heading">Marinara</p>
+            <p class="description">
+              Marinara is classic Neapolitan pizza without any cheese,all about the tomatoes,with garlic and oregano.</p>
+            <div class="price">
+              <h4 class="item-price">&#8377 129</h6>
+
+                <div class="mm">
+                  <div id="tsom1" class="bb">
+                   <div class="del">
+                     <a href="javascript:;"><img src="trash.svg" alt="" id="delll" onclick="imaged()" name="pizza1" class="tsom1"></div></a>
+
+                   <div class="nummm">
+                    <select name="cars" id="cars1" class="select">
+                      <option value="129x1">1</option>
+                      <option value="129x2">2</option>
+                      <option value="129x3">3</option>
+                      <option value="129x4">4</option>
+                    </select>
+                   </div>
+                  </div>
+                    </div>
+
+                <input type="checkbox" name="Marinara" id="pizza1" value="cars1" class="check">
+
+            </div>
+            </p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="pizza2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">
+            <p class="heading">Margherita</p>
+            <p class="description">
+              A hugely popular margherita, with a deliciously tangy cheese and tomato</p>
+            <div class="price">
+              <h4 class="item-price">&#8377 149</h6>
+
+                <div class="mm">
+                  <div id="tsom2" class="bb">
+                   <div class="del">
+                     <a href="javascript:;"><img src="trash.svg" alt="" id="delll" onclick="imaged()" name="pizza2" class="tsom2"></div></a>
+                     <div class="nummm">
+                      <select name="cars" id="cars2" class="select">
+                        <option value="149x1">1</option>
+                        <option value="149x2">2</option>
+                        <option value="149x3">3</option>
+                        <option value="149x4">4</option>
+                      </select>
+                     </div>
+                  </div>
+                     <!-- <input type="checkbox" id="checkkk" class="tempu"> -->
+                 </div>
+
+                <input type="checkbox" name="Margherita" id="pizza2" value="cars2" class="check">
+
+            </div>
+            </p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="pizza3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">
+            <p class="heading">Yummy-Pizza</p>
+            <p class="description">
+              Fresh basil leaves,Mozzarella cheese,Liquid cheese,Tomatoes</p>
+            <div class="price">
+              <h4 class="item-price">&#8377 219</h6>
+
+                <div class="mm">
+                  <div id="tsom3" class="bb">
+                   <div class="del">
+                     <a href="javascript:;"><img src="trash.svg" alt="" id="delll" onclick="imaged()" name="pizza3" class="tsom3"></div></a>
+
+                   <div class="nummm">
+                    <select name="cars" id="cars3" class="select">
+                      <option value="219x1">1</option>
+                      <option value="219x2">2</option>
+                      <option value="219x3">3</option>
+                      <option value="219x4">4</option>
+                    </select>
+                   </div>
+                  </div>
+                    </div>
+
+                <input type="checkbox" name="Yummy-Pizza" id="pizza3" value="cars3" class="check">
+
+            </div>
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="c2">
+
+        <div class="card" style="width: 18rem;">
+          <img src="pizza4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">
+            <p class="heading">Roasted-Pizza</p>
+            <p class="description">
+              Ricotta cheese, cremini mushrooms and fresh zucchini </p>
+            <div class="price">
+              <h4 class="item-price">&#8377 100</h6>
+                <div class="mm">
+                  <div id="tsom4" class="bb">
+                   <div class="del">
+                     <a href="javascript:;"><img src="trash.svg" alt="" id="delll" onclick="imaged()" name="pizza4" class="tsom4"></div></a>
+
+                   <div class="nummm">
+                    <select name="cars" id="cars4" class="select">
+                      <option value="100x1">1</option>
+                      <option value="100x2">2</option>
+                      <option value="100x3">3</option>
+                      <option value="100x4">4</option>
+                    </select>
+                   </div>
+                  </div>
+                    </div>
+                <input type="checkbox" name="Roasted-Pizza" id="pizza4" value="cars4" class="check">
+
+            </div>
+            </p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="pizza5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">
+            <p class="heading">Veggie Supreme</p>
+            <p class="description">
+              Black Olives, Mushroom, Mushroom, Onion, Red Paprika, Sweet Corn</p>
+            <div class="price">
+              <h4 class="item-price">&#8377 190</h6>
+                <div class="mm">
+                  <div id="tsom5" class="bb">
+                   <div class="del">
+                     <a href="javascript:;"><img src="trash.svg" alt="" id="delll" onclick="imaged()" name="pizza5" class="tsom5"></div></a>
+
+                   <div class="nummm">
+                    <select name="cars" id="cars5" class="select">
+                      <option value="190x1">1</option>
+                      <option value="190x2">2</option>
+                      <option value="190x3">3</option>
+                      <option value="190x4">4</option>
+                    </select>
+                   </div>
+                  </div>
+                    </div>
+                <input type="checkbox" name="Veggie Supreme" id="pizza5" value="cars5" class="check">
+
+            </div>
+            </p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="pizza6.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">
+            <p class="heading">Peppy Paneer</p>
+            <p class="description">
+              Chunky paneer with crisp capsicum and spicy red pepper - quite a mouthful!</p>
+            <div class="price">
+              <h4 class="item-price">&#8377 320</h6>
+                <div class="mm">
+                  <div id="tsom6" class="bb">
+                   <div class="del">
+                     <a href="javascript:;"><img src="trash.svg" alt="" id="delll" onclick="imaged()" name="pizza6" class="tsom6"></div></a>
+
+                   <div class="nummm">
+                    <select name="cars" id="cars6" class="select">
+                      <option value="320x1">1</option>
+                      <option value="320x2">2</option>
+                      <option value="320x3">3</option>
+                      <option value="320x4">4</option>
+                    </select>
+                   </div>
+                  </div>
+                    </div>
+                <input type="checkbox" name="Peppy Paneer" id="pizza6" value="cars6" class="check">
+
+            </div>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+
+
+    
+    <!-- <input type="submit" id="btn">
+    <p id="demo"></p> -->
+    <p></p>
+    <h4 id="scrollspyHeading2">
+      <div class="line">
+        <div class="bara"></div>
+        <div class="boxa">
+          <img src="redlogo.png" alt="" id="greenlogo">
+          <p id="p2">Burger</p>
+        </div>
+      </div>
+
+      
+        <div class="c1">
+
+          <div class="card" style="width: 18rem;">
+            <img src="burger.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">
+              <p class="heading">Crispy-Chicken</p>
+              <p class="description2">
+                Delightfully crispy chicken sandwich with a crispy chicken patty on a perfectly toasty bun.</p>
+              <div class="price">
+                <h4 class="item-price">&#8377 99</h6>
+                  <div class="mm">
+                    <div id="tsom7" class="bb">
+                     <div class="del">
+                       <a href="javascript:;"><img src="trash.svg" alt="" id="delll" onclick="imaged()" name="burger1" class="tsom7"></div></a>
+  
+                     <div class="bummm">
+                      <select name="cars" id="cars7" class="select2">
+                        <option value="99x1">1</option>
+                        <option value="99x2">2</option>
+                        <option value="99x3">3</option>
+                        <option value="99x4">4</option>
+                      </select>
+                     </div>
+                    </div>
+                      </div>
+                  <input type="checkbox" name="Crispy-Chicken" id="burger1" value="cars7" class="check">
+
+              </div>
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="burger2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">
+              <p class="heading">Classic Chicken</p>
+              <p class="description2">
+                Juicy Chicken meat coated in crispy batter with a kick of spice topped with a creamy sauce and crispy
+                lettuce.</p>
+              <div class="price">
+                <h4 class="item-price">&#8377 69</h6>
+                  <div class="mm">
+                    <div id="tsom8" class="bb">
+                     <div class="del">
+                       <a href="javascript:;"><img src="trash.svg" alt="" id="delll" onclick="imaged()" name="burger2" class="tsom8"></div></a>
+  
+                     <div class="bummm">
+                      <select name="cars" id="cars8" class="select2">
+                        <option value="69x1">1</option>
+                        <option value="69x2">2</option>
+                        <option value="69x3">3</option>
+                        <option value="69x4">4</option>
+                      </select>
+                     </div>
+                    </div>
+                      </div>
+                  <input type="checkbox" name="Classic Chicken" id="burger2" value="cars8" class="check">
+
+              </div>
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="burger3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">
+              <p class="heading">Cheese-Burger</p>
+              <p class="description2">
+                Single chicken / lamb / tenderloin patty, Crispy bacon, cheese, pickles, Burgerama sauce</p>
+              <div class="price">
+                <h4 class="item-price">&#8377 99</h6>
+                  <div class="mm">
+                    <div id="tsom9" class="bb">
+                     <div class="del">
+                       <a href="javascript:;"><img src="trash.svg" alt="" id="delll" onclick="imaged()" name="burger3" class="tsom9"></div></a>
+  
+                     <div class="bummm" id="bumm">
+                      <select name="cars" id="cars9" class="select2">
+                        <option value="99x1">1</option>
+                        <option value="99x2">2</option>
+                        <option value="99x3">3</option>
+                        <option value="99x4">4</option>
+                      </select>
+                     </div>
+                    </div>
+                      </div>
+                  <input type="checkbox" name="Cheese-Burger" id="burger3" value="cars9" class="check">
+
+              </div>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      
+      <div class="offcanvas-body">
+        <p id="demo"></p>
+      </div>
+    </h4>
+   
+    <h4 id="scrollspyHeading3">
+      <div class="line">
+        <div class="bara"></div>
+        <div class="boxa">
+          <img src="greenlogo.png" alt="" id="greenlogo">
+          <p id="p1">Cans</p>
+        </div>
+      </div>
+
+    </h4>
+    
+      <div class="c3">
+
+        <div class="card2" style="width: 5rem;" >
+          <img src="coce.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            
+            <div class="price2">
+              <h4 class="item-price">&#8377 59</h6>
+                <div class="mm" >
+                  <div id="tsom10" class="bb2">
+                   <div class="del">
+                     <a href="javascript:;"><img src="trash.svg" alt="" id="delll" onclick="imaged()" name="Colddrink" class="tsom10"></div></a>
+
+                   <div class="bummm2" id="bumm" >
+                    <select name="cars" id="cars10" class="select2">
+                      <option value="59x1">1</option>
+                      <option value="59x2">2</option>
+                      <option value="59x3">3</option>
+                      <option value="59x4">4</option>
+                    </select>
+                   </div>
+                  </div>
+                    </div>
+                <input type="checkbox" name="Cold-Drink" id="Colddrink" value="cars10" class="check" >
+
+            </div>
+          </div>
+        </div>
+        <div class="card2" style="width: 5rem;" >
+          <img src="dew.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            
+            <div class="price2">
+              <h4 class="item-price">&#8377 59</h6>
+                <div class="mm" >
+                  <div id="tsom11" class="bb2">
+                   <div class="del">
+                     <a href="javascript:;"><img src="trash.svg" alt="" id="delll" onclick="imaged()" name="Dew" class="tsom11"></div></a>
+
+                   <div class="bummm2" id="bumm" >
+                    <select name="cars" id="cars11" class="select2">
+                      <option value="59x1">1</option>
+                      <option value="59x2">2</option>
+                      <option value="59x3">3</option>
+                      <option value="59x4">4</option>
+                    </select>
+                   </div>
+                  </div>
+                    </div>
+                <input type="checkbox" name="Dew" id="Dew" value="cars11" class="check" style="width: 50px;" st>
+
+            </div>
+          </div>
+        </div>
+        <div class="card2" style="width: 5rem;" >
+          <img src="fanta.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            
+            <div class="price2">
+              <h4 class="item-price">&#8377 59</h6>
+                <div class="mm" >
+                  <div id="tsom12" class="bb2">
+                   <div class="del">
+                     <a href="javascript:;"><img src="trash.svg" alt="" id="delll" onclick="imaged()" name="Fanta" class="tsom12"></div></a>
+
+                   <div class="bummm2" id="bumm" >
+                    <select name="cars" id="cars12" class="select2">
+                      <option value="59x1">1</option>
+                      <option value="59x2">2</option>
+                      <option value="59x3">3</option>
+                      <option value="59x4">4</option>
+                    </select>
+                   </div>
+                  </div>
+                    </div>
+                <input type="checkbox" name="Fanta" id="Fanta" value="cars12" class="check" style="width: 50px;" st>
+
+            </div>
+          </div>
+        </div>
+        <div class="card2" style="width: 5rem;" >
+          <img src="pepsi.png" class="card-img-top neww" alt="...">
+          <div class="card-body">
+            
+            <div class="price2">
+              <h4 class="item-price">&#8377 59</h6>
+                <div class="mm" >
+                  <div id="tsom13" class="bb2">
+                   <div class="del">
+                     <a href="javascript:;"><img src="trash.svg" alt="" id="delll" onclick="imaged()" name="Pepsi" class="tsom13"></div></a>
+
+                   <div class="bummm2" id="bumm" >
+                    <select name="cars" id="cars13" class="select2">
+                      <option value="59x1">1</option>
+                      <option value="59x2">2</option>
+                      <option value="59x3">3</option>
+                      <option value="59x4">4</option>
+                    </select>
+                   </div>
+                  </div>
+                    </div>
+                <input type="checkbox" name="Pepsi" id="Pepsi" value="cars13" class="check" style="width: 50px;" st>
+
+            </div>
+          </div>
+        </div>
+        <div class="card2" style="width: 5rem;" >
+          <img src="sprite.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            
+            <div class="price2">
+              <h4 class="item-price">&#8377 59</h6>
+                <div class="mm" >
+                  <div id="tsom14" class="bb2">
+                   <div class="del">
+                     <a href="javascript:;"><img src="trash.svg" alt="" id="delll" onclick="imaged()" name="Sprite" class="tsom14"></div></a>
+
+                   <div class="bummm2" id="bumm" >
+                    <select name="cars" id="cars14" class="select2">
+                      <option value="59x1">1</option>
+                      <option value="59x2">2</option>
+                      <option value="59x3">3</option>
+                      <option value="59x4">4</option>
+                    </select>
+                   </div>
+                  </div>
+                    </div>
+                <input type="checkbox" name="Sprite" id="Sprite" value="cars14" class="check" style="width: 50px;" st>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </form>
+   
+  </div>
+ </div>
+
+
+  <!-- <footer>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://source.unsplash.com/1400x200/?pizza" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://source.unsplash.com/1400x200/?cheese-pizza" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://source.unsplash.com/1400x200/?large-pizza" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </footer> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <!-- <script>
+function imaged() {
+  
+      $(document).ready(function(){
+        $('img').click(function(event){
+          let pop=event.target.name
+        console.log(pop);
+        document.getElementById(pop).checked=false
+        document.getElementById(pop).style.display='block'
+        document.getElementById(event.target.className).style.opacity=0
+        });
+        });
+     
+    }
+  
+   
+
+    const varv=document.getElementById("increaser")
+  const delll=document.getElementById("delll")
+    $('#form input:checkbox').click(function () {
+    if ($("#form input:checkbox:checked").length > 0)
+    {
+      const array1=['pizza1','pizza2','pizza3','pizza4','pizza5','pizza6','burger1','burger2','burger3','Colddrink','Dew','Fanta','Pepsi','Sprite']
+      const array2=['tsom1','tsom2','tsom3','tsom4','tsom5','tsom6','tsom7','tsom8','tsom9','tsom10','tsom11','tsom12','tsom13','tsom14']
+      for(let i=0;i<array1.length;i++){
+        if(document.getElementById(array1[i]).checked){
+          document.getElementById(array2[i]).style.opacity=1
+         document.getElementById(array1[i]).style.display='none'
+          
+          
+        }
+       
+      }
+  
+        // any one is checked
+        console.log('check')
+    }
+    else
+    {
+       // none is checked
+       console.log('nocheck')
+    }
+  })
+  
+  
+  
+  
+  
+  
+  
+  </script>
+
+  <script>
+
+  
+
+
+
+
+    $(function () {
+      $('#checkout').click(function () {
+
+        var features = [];
+        var features2 = [];
+        
+        
+        $('form input[type="checkbox"]:checked').each(function () {
+          //features.push($(this).val());
+          features.push(document.getElementById($(this).val()).value);
+          features2.push($(this).attr("name"));
+          
+        });
+        $('#itemname').html(features.join('<br>'));
+       $('#itemprice').html(features2.join('<br>'));
+
+       for(let r=0;r<features.length;r++){
+         console.log(features[r])
+       }
+       
+       
+
+        function myq(array) {
+          let total = 0
+          for (i = 0; i < array.length; i++) {
+            let arra=array[i].split("x")
+            let fb=parseInt(arra[0])*parseInt(arra[1])
+            console.log(fb)
+            total = total + fb
+          }
+          return total;
+        }
+        var num = myq(features);
+        console.log(num)
+        if (num != 0) {
+          document.getElementById("proceed").disabled = false;
+          document.getElementById("demo2").innerHTML = num;
+
+        }
+        else {
+
+          document.getElementById("proceed").disabled = true;
+          document.getElementById("demo2").innerHTML = "Cart empty";
+        }
+      });
+    });
+
+    const toggleButton = document.getElementsByClassName('togglebtn')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+    
+    toggleButton.addEventListener('click', () => {
+      navbarLinks.classList.toggle('active')
+    })
+
+    $("[type='number']").keypress(function (evt) {
+      evt.preventDefault();
+  });
+
+  </script> -->
+
+<script src="menuscript.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
