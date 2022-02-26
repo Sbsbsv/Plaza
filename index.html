@@ -70,13 +70,40 @@
        font-weight: bold;
        opacity: 0.9;
         }
-       
+        .dev{
+          display: flex;
+          align-items: center;
+          align-content: center;
+        }
+        .developer{
+          font-size: 80%;
+          font-weight: bold;
+          color: white;
+          
+          border-radius: 10px;
+          margin-left: 5px;
+          margin-right: 5px;
+          margin-top: 2px;
+        }
+        
+        
+
+       .devvv{
+       display: none;
+         height: 25px;
+         background-color: rgb(70, 69, 69);
+         border-radius: 7px;
+         box-shadow: 0px 0px 1px 1.5px rgb(27, 27, 27);
+       }
         #devicon{
             filter: drop-shadow(1px 3px 3px rgba(85, 85, 85, 0.774));
             width: 40px;
             height: 40px;
-            
+            cursor: pointer;
         }
+          
+      
+       
     .navbar{
         margin-top: 0px;
         border-radius: 25px;
@@ -180,6 +207,12 @@ margin-right: 100px;
           margin: 20px;
           margin-right: 50px;
 }
+.itembox1:hover,.itembox2:hover,.itembox3:hover,.itembox4:hover{
+  cursor: pointer;
+  box-shadow: 1px 1px 10px 3px rgba(39, 39, 39, 0.685);
+}
+
+
 #burgerlogo{
   width: 150px;
   height: 150px;
@@ -187,6 +220,7 @@ margin-right: 100px;
   margin-left: -10px;
   filter: drop-shadow(5px 10px 15px rgb(117, 117, 117));
 }
+
 #canlogo{
   width: 140px;
   height: 140px;
@@ -228,7 +262,7 @@ margin-right: 100px;
   margin-top: -170px;
   width: 240px;
   height: 240px;
-  filter: drop-shadow(5px 0px 5px rgb(161, 159, 159));
+  filter: drop-shadow(5px 0px 5px rgba(196, 196, 196, 0.76));
 }
 
 
@@ -309,6 +343,7 @@ margin-right: 100px;
     }
     .itembox1,.itembox3{
       margin-right: 0;
+      z-index: 10;
     }
   }
   
@@ -352,6 +387,7 @@ margin-right: 100px;
       }
     .itembox1,.itembox2,.itembox3,.itembox4{
      margin-top: 20px;
+     z-index: 10;
      
     }
       .itembox1,.itembox3{
@@ -427,7 +463,10 @@ margin-right: 100px;
               </li>
             </ul>
            <div class="dev">
-               <img id="devicon" src="user2.png" alt="icon_not_found">
+            <div class="devvv"><p class="developer">Developer</p></div>
+            <a href="https://www.instagram.com/_parm_veer/">
+               <img id="devicon" class="devimg" src="user2.png" alt="icon_not_found"></a>
+               
            </div>
           </div>
         </div>
@@ -464,13 +503,13 @@ margin-right: 100px;
           <div class="rdabag" id="rambo1"></div>
          <div id="rambo2" class="rdabag2">
           <div class="rbg">
-            <div class="itembox1">
+            <div class="itembox1"  onclick="location.href = 'menu.html';">
               <img src="burgerlogo.png" id="burgerlogo" alt="">
               <p class="itemname">Burger</p>
               <p class="itemdes">Mushroom Sauce</p>
               <span class="forstar"><img class="tara" src="starr.jpg" alt="">4.8</span>
             </div>
-            <div class="itembox2">
+            <div class="itembox2" onclick="location.href = 'menu.html';">
               <img src="pslice1.png" id="pizzalogo" alt="">
               <p class="itemname">Pizza</p>
               <p class="itemdes">Mozzarella Cheese</p>
@@ -479,13 +518,13 @@ margin-right: 100px;
           </div>
           
           <div class="rbg2">
-            <div class="itembox3">
+            <div class="itembox3" onclick="location.href = 'menu.html';">
               <img src="donut.png" id="burgerlogo" alt="">
               <p class="itemname">Donuts</p>
               <p class="itemdes">Kashmiri Chocolate</p>
               <span class="forstar"><img class="tara" src="starr.jpg" alt="">4.2</span>
             </div>
-            <div class="itembox4">
+            <div class="itembox4" onclick="location.href = 'menu.html';">
               <img src="drinks.png" id="canlogo" alt="">
               <p class="itemname">Drinks</p>
               <p class="itemdes">Coca-Cola/Pepsi</p>
@@ -499,7 +538,7 @@ margin-right: 100px;
       <footer>
         <div class="nichlasman">
           <div class="scooty" >
-            <img src="del45.png" alt="" class="del45">
+            <img src="del45.jpg" alt="" class="del45">
           <img src="scooter.png" class="scooter" alt="">
         </div>
         <div class="tagline">
